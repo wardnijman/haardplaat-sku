@@ -1,0 +1,27 @@
+<html> 
+  <head>
+    <style>
+      fieldset {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+      }
+    </style>
+  </head>   
+  <body> 
+    <form action="https://firebacks.net/" method="GET" onSubmit="return submitForm()">
+    <fieldset>
+      <legend>Instant haardplaat product page</legend>
+      <input type="text" name="sku" id="sku" placeholder="p0100" autofocus>	
+      <label for="submit">SKU</label>
+      <input type="submit" class="submit" value="Submit">
+    </fieldset>
+  </form>
+  <script>
+    function submitForm() {
+      location.href="https://firebacks.net/"+document.getElementById("sku").value+".html";
+      return false;
+    }
+  </script>
+  </body>    
+</html> 
